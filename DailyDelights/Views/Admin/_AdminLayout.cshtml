@@ -1,0 +1,131 @@
+﻿
+
+
+@{
+    Layout = null;
+}
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DailyDelights.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 60px 1fr;
+    }
+
+    header {
+        background-color: white;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .sidebar {
+        background-color: black;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    main {
+
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .nav-item {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-item:hover {
+        background-color: rgb(49, 44, 66);
+        cursor: pointer;
+    }
+
+    .nav-item a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+    <header>
+
+    </header>
+    <section class="sidebar p-3">
+        <div class="mt-2 mb-2">
+            <h1 class="text-white">Daily Delights</h1>
+        </div>
+
+
+
+        <div class="nav-item w-100 p-2 rounded">
+            <a class="btn w-100 text-start text-white" asp-controller="Admin" asp-action="Index">
+                <h5>Dashboard</h5>
+                <i class="bi bi-clipboard-data-fill"></i>
+            </a>
+
+        </div>
+        <div class="nav-item w-100 p-2 rounded">
+            <a class="btn w-100 text-start text-white" asp-controller="Admin" asp-action="Products">
+                <h5>Products</h5>
+                <i class="bi bi-diagram-3-fill"></i>
+            </a>
+
+        </div>
+         <div class="nav-item w-100 p-2 rounded">
+            <a class="btn w-100 text-start text-white" asp-controller="Admin" asp-action="Category">
+                <h5>Categories</h5>
+                <i class="bi bi-diagram-3-fill"></i>
+            </a>
+
+        </div>
+         <div class="nav-item w-100 p-2 rounded">
+            <a class="btn w-100 text-start text-white" asp-controller="Admin" asp-action="Orders">
+                <h5>Orders</h5>
+                <i class="bi bi-diagram-3-fill"></i>
+            </a>
+
+        </div>
+        <div class="nav-item w-100 p-2 rounded">
+            <a class="btn w-100 text-start text-white" asp-controller="Admin" asp-action="Users">
+                <h5>Users</h5>
+                <i class="bi bi-people-fill"></i>
+            </a>
+
+        </div>
+         <div class="nav-item w-100 p-2 rounded">
+            <a class="btn w-100 text-start text-white" asp-controller="Account" asp-action="Logout">
+                <h5>Logout</h5>
+                <i class="bi bi-box-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+
+</html>

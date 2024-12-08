@@ -1,0 +1,166 @@
+﻿@model DailyDelights.ViewModels.ProductCategoryViewModel
+@using System.Security.Claims
+
+@{
+    var category = ViewBag.category;
+    var pageValue = ViewBag.page;
+}
+
+
+
+
+
+<div class="container" style="margin-top: 10px;">
+
+
+
+    <div class="row g-2">
+        <div class="col-2">
+            <a class="btn rounded" style="background-color: blueviolet;" asp-controller="Product" asp-action="GetProducts" asp-route-Category="Suggestion">Recommended</a>
+        </div>
+        <div class="col-2">
+            <a class="btn rounded" style="background-color: blueviolet;" asp-controller="Product" asp-action="GetProducts" asp-route-Category="All">All</a>
+        </div>
+        @foreach(var productCategory in Model.Categories)
+        {
+            <div class="col-2">
+                <a class="btn rounded" style="background-color: blueviolet;" asp-controller="Product" asp-action="GetProducts" asp-route-Category="@productCategory.CategoryName">@productCategory.CategoryName</a>
+            </div>
+        }
+    </div>
+
+    <div class="row g-2">
+        <div class="col-6">
+            <p>Sort by price </p>
+           
+            <a asp-route-SortByPrice="desc" asp-route-Category="@Model.Category" asp-controller="Product" asp-action="GetProducts"><i class="bi bi-arrow-up"></i></a>
+           <a asp-route-SortByPrice="asc" asp-route-Category="@Model.Category" asp-controller="Product" asp-action="GetProducts"><i class="bi bi-arrow-down"></i></a>
+        </div>
+    
+
+    <div class="row justify-content-center gap-4" style="margin-top: 50px;">
+        @foreach(var product in Model.Products)
+        {
+            <div class="col-3" style="height: 450px; background-color: white; border-radius: 10px; padding: 0px; box-shadow: 1px 3px 1px 2px gray;">
+                <img style="width: 100%; height: 300px; border-radius: 10px; object-fit: cover;" src="~/images/productImages/@product.ImageUrl" alt=""/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8" style="height: 2.5rem;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;">
+                            <p class="fw-bold">@product.Title</p>
+
+                        </div>
+                        <div class="col-4">
+                            <p class="text-end fw-bold">$@product.Price</p>
+                        </div>
+                    </div>
+
+                    
+
+                    @for(int i=1;i<6;i++){
+                        @if(i<=product.Ratting){
+                            <i class="bi bi-star-fill" style="color: yellow;"></i>
+                        }else{
+                            <i class="bi bi-star-fill" style="color: gray;"></i>
+                        }
+                        
+                    }
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="btn btn-secondary" asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">Details</a>
+                        </div>
+                        @if(product.Stock <= 0){
+                        <div class="col-6">
+                            <p class="bg-warning">out of stock</p>
+                        </div>
+                        }else{
+                             <div class="col-6">
+                            <a class="btn btn-success" onclick="addToCart('@product.Id', '@product.Title', '@product.ImageUrl', '@product.Price', '@product.Stock', '@User.Identity.IsAuthenticated')">Add to Cart</a>
+                          </div>
+                        }
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="container" style="width: 200px; margin-top: 50px;">
+    <div class="row justify-content-center gap-3">
+        @if (Model.Page == 1)
+        {
+            int Nextpage = Model.Page + 1;
+            <div class="col-1">
+                <a class="btn btn-primary" asp-route-Category="@Model.Category" asp-route-page="@Model.Page">1</a>
+            </div>
+            <div class="col-1">
+                <a class="btn btn-primary" asp-route-Category="@Model.Category" asp-route-page="@Nextpage">2</a>
+            </div>
+            <div class="col-1">
+                <a class="btn btn-primary" asp-route-Category="@Model.Category" asp-route-page="@Nextpage">...</a>
+            </div>
+        }
+        else if (Model.Page > 1)
+        {
+            int nextPage = Model.Page + 1;
+            int prevPage = Model.Page - 1;
+            <div class="col-1">
+                <a class="btn btn-primary" asp-route-SortByPrice="@Model.SortByPrice" asp-route-Category="@Model.Category" asp-route-page="@prevPage">@prevPage</a>
+            </div>
+            <div class="col-1">
+                <a class="btn btn-primary" asp-route-SortByPrice="@Model.SortByPrice" asp-route-Category="@Model.Category" asp-route-page="@Model.Page">@Model.Page</a>
+            </div>
+            <div class="col-1">
+                <a class="btn btn-primary" asp-route-SortByPrice="@Model.SortByPrice" asp-route-Category="@Model.Category" asp-route-page="@nextPage">@nextPage</a>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    function addToCart(productId, productTitle, productImage, productPrice, productStock, isAuthenticated) {
+        if (isAuthenticated !== 'True') {
+            window.location.href = "/Account/Login";
+            return;
+        }
+
+        let cart = localStorage.getItem("cart");
+        if (!cart) {
+            cart = JSON.stringify([]);
+            localStorage.setItem("cart", cart);
+        }
+
+        let cartData = JSON.parse(cart);
+        let ifExist = false;
+
+        for (let i = 0; i < cartData.length; i++) {
+            if (cartData[i].productId == productId) {
+                ifExist = true;
+                break;
+            }
+        }
+
+        if (ifExist) {
+            return alert("Item already exists in the cart.");
+        }
+
+        const product = {
+            productId,
+            productTitle,
+            productImage,
+            productPrice,
+            productStock,
+            noOfItem: 1,
+            total: productPrice // Calculate total here
+        };
+
+        product.total = product.productPrice * product.noOfItem;
+        cartData.push(product);
+        localStorage.setItem("cart", JSON.stringify(cartData));
+        alert("Product added to cart!");
+    }
+</script>

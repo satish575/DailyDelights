@@ -1,0 +1,36 @@
+﻿@model DailyDelights.ViewModels.LoginViewModel
+
+<div class="container mt-5">
+@{
+    string emailMessage=ViewBag.EmailConfirm;
+}
+
+    <div class="row justify-content-center">
+        <div class="row justify-context-between g-0" style="height: 60vh; width: 50vw;">
+            <div class="col-6" style="height: 100%;width: 50%;">
+                <img style="width: 100%; height: 100%; object-fit: cover;"
+                    src="https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
+            <div class="col-6 p-3" style="height:100%; width: 50%;background-color: whitesmoke;">
+               
+                <h1 style="color: #FFC32C;">Login</h1><br>
+                @if(!String.IsNullOrEmpty(emailMessage)){
+                    <span class="text-danger">@emailMessage</span>
+                }
+                <form asp-controller="Account" asp-action="Login" method="post">
+                    <input type="text" asp-for="Username" id="" class="form-control" placeholder="Enter username"><br>
+                    <span class="text-danger" asp-validation-for="Username"></span>
+                    <input type="password" asp-for="Password" id="" class="form-control" placeholder="Enter password"><br>
+                     <span class="text-danger" asp-validation-for="Password"></span>
+                     <input type="hidden" asp-for="ReturnUrl" value="@ViewData["ReturnUrl"]" />
+                    <input class="btn" style="background-color: #FFC32C; color: white;" type="submit" value="Login">
+                </form>
+                <span>Don't have an account ?<a asp-controller="Account" asp-action="Register" class="text-decoration-none" style="color: red; margin-left: 3px;">Register</a></span>
+                <a class="btn btn-danger" asp-controller="Account" asp-action="ForgotPassword">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>

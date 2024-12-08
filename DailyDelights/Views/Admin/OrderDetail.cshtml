@@ -1,0 +1,64 @@
+﻿@{
+    Layout="~/Views/Admin/_AdminLayout.cshtml";
+}
+@model IEnumerable<Order>
+
+<div class="container">
+    <div class="row">
+       
+            @foreach(var order in Model){
+                 <div class="col-6">
+             <p>Customer Name: @order.User.UserName</p>
+             </div>
+             <div class="col-6">
+             <p>Customer Email: @order.User.Email</p>
+             </div>
+             <div class="col-6">
+             <p>Order date: @order.OrderDate</p>
+             </div>
+             <div class="col-6">
+                @if(order.IsPain){
+                     <p>Payment: Done</p>
+                }else{
+                    <p>Payment: Remaining</p>
+                }
+             
+             </div>
+            }
+            
+       
+    </div>
+</div>
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <td>Product id</td>
+            <td>product name</td>
+            <td>quantity</td>
+            <td>price</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            @foreach(var orderItem in item.OrderItems){
+                <tr>
+                    <td>@orderItem.ProductId</td>
+                    <td>@orderItem.Product.Title</td>
+                    <td>@orderItem.Quantity</td>
+                    <td>@orderItem.Product.Price</td>
+                </tr>
+            }
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="bg-danger text-white fw-bold">Total amount</td>
+            @foreach(var item in Model){
+                <td class="bg-danger text-white fw-bold">@item.TotalAmount</td>
+            }
+            
+        </tr>
+    </tfoot>
+</table>

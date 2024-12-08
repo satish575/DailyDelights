@@ -1,0 +1,47 @@
+﻿@{
+    Layout="~/Views/Admin/_AdminLayout.cshtml";
+}
+@model DailyDelights.ViewModels.ProductViewModel
+@{
+    string success=ViewBag.Success;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-14">
+            <h1 class="text-center">Add new category</h1>
+             @if(!string.IsNullOrEmpty(success)){
+                <h1>@success</h1>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+            <div class="" asp-validation-summary="All"></div>
+            <form asp-controller="Admin" asp-method="AddProduct" method="post" enctype="multipart/form-data">
+                <input type="text" class="form-control mt-2" asp-for="ProductDTO.Title" id="" placeholder="Enter Product Title">
+                <span asp-validation-for="ProductDTO.Title"></span>
+                <input type="text" class="form-control mt-2" asp-for="ProductDTO.Description" id="" placeholder="Enter Product Description">
+                <span asp-validation-for="ProductDTO.Description"></span>
+                <input type="number" class="form-control mt-2" asp-for="ProductDTO.Price" value="" id="" placeholder="Enter Product Price">
+                <span asp-validation-for="ProductDTO.Price"></span>
+                <input type="text" class="form-control mt-2" asp-for="ProductDTO.Stock" value="" id="" placeholder="Enter Product Stock">
+                <span asp-validation-for="ProductDTO.Stock"></span>
+                <div class="form-group">
+                <label asp-for="ProductDTO.CategoryId">Category</label>
+                <select asp-for="ProductDTO.CategoryId" class="form-control" asp-items="Model.Categories"></select>
+                <span asp-validation-for="ProductDTO.CategoryId" class="text-danger"></span>
+                </div>
+
+                  <div class="form-group">
+                <label asp-for="ProductDTO.Image">Product Image</label><br>
+                <input type="file" asp-for="ProductDTO.Image" id="">
+                <span asp-validation-for="ProductDTO.Image" class="text-danger"></span>
+                </div>
+
+                <input type="submit" class="btn btn-primary mt-2" value="Add">
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

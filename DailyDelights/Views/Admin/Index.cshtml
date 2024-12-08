@@ -1,0 +1,153 @@
+﻿@model DailyDelights.ViewModels.DashboardViewModel
+
+@{
+    Layout="~/Views/Admin/_AdminLayout.cshtml";
+}
+
+
+
+   
+
+<h1>Dashboard</h1>
+
+<div class="div" style="display: flex; flex-direction: row;">
+<canvas id="myChart" style="width:100%;max-width:500px"></canvas>
+<canvas id="MaxSoldProductChart" style="width: 100%;max-width: 500px;"></canvas>
+</div>
+
+<div class="div" style="display: flex; flex-direction: row; margin-top: 50px;">
+<canvas id="finishingStock" style="width:100%;max-width:500px"></canvas>
+<canvas id="OverAllSales" style="width: 100%;max-width: 500px;"></canvas>
+</div>
+ <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script>
+@* const xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    },{
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    },{
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+}); *@
+
+const labels = @Html.Raw(Json.Serialize(Model.lastFiveDaysSales.Select(s => s.Date.ToString("yyyy-MM-dd"))));
+    const dataValues = @Html.Raw(Json.Serialize(Model.lastFiveDaysSales.Select(s => s.TotalAmount)));
+ 
+    const barColors = ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"];
+
+    new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: labels, // Use the dates as labels
+            datasets: [{
+                label: 'Sales (Total Amount)',
+                backgroundColor: barColors,
+                data: dataValues // Use the sales amounts as data
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "Last 5 Days Sales"
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+
+
+ const maxSoldProductLabels=@Html.Raw(Json.Serialize(Model.maxSoldProducts.Select(s=>s.ProductName)));
+ const maxSoldDataValues=@Html.Raw(Json.Serialize(Model.maxSoldProducts.Select(s=>s.TotalQuantity)));
+ new Chart("MaxSoldProductChart", {
+  type: "pie",
+  data: {
+    labels: maxSoldProductLabels,
+    datasets: [{
+      backgroundColor: barColors,
+      data: maxSoldDataValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Maximum Sold Product"
+    }
+  }
+});
+
+@* var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("finishingStock", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Products Stocks avaliable"
+    }
+  }
+});  *@
+</script>
+@* 
+<script>
+
+    const dataValue = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("OverAllSales", {
+  type: "line",
+  data: {
+    labels: dataValue,
+    datasets: [{
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    },{
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    },{
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+})
+</script> *@

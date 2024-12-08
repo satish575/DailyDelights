@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DailyDelights.ViewModels.Orders>
+
+<ul>
+    <p>current user cluster</p>
+    @foreach(var cluster in Model){
+        <li>@cluster.OriginalId</li>
+        <li>@cluster.EncodedId</li>
+        
+            @if(cluster.Gender==1){
+                <li>male</li>
+            }else{
+                <li>female</li>
+            }
+        <li>@cluster.AverageOrderValue</li>
+        <li>@cluster.AverageProductValue</li>
+    }
+</ul>

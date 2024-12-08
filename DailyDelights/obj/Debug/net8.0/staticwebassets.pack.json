@@ -1,0 +1,569 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DailyDelights.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DailyDelights.7xh867fdj8.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\alex.jpg",
+      "PackagePath": "staticwebassets\\images\\alex.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\mqdefault.jpg",
+      "PackagePath": "staticwebassets\\images\\mqdefault.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\02968920-5515-440d-a96a-100e68b8db02_Women purse.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\02968920-5515-440d-a96a-100e68b8db02_Women purse.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\0450812b-dc32-47fd-a732-8e4d8c0c075f_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\0450812b-dc32-47fd-a732-8e4d8c0c075f_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\050869ed-2e8a-4f05-bb27-4c7606071a57_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\050869ed-2e8a-4f05-bb27-4c7606071a57_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\05fd802f-b2d1-4ae5-bda1-8702a848f56a_pexels-introspectivedsgn-4987519.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\05fd802f-b2d1-4ae5-bda1-8702a848f56a_pexels-introspectivedsgn-4987519.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\081b0de1-22f0-4e8a-b7ba-56b7f27139f9_bracelet.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\081b0de1-22f0-4e8a-b7ba-56b7f27139f9_bracelet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\0f7ada67-d3d0-460d-aa82-68b954769209_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\0f7ada67-d3d0-460d-aa82-68b954769209_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\11e6dd84-19eb-47c2-8291-f287f84390b4_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\11e6dd84-19eb-47c2-8291-f287f84390b4_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\16f0bc6f-01aa-4ee0-9a71-f5f6ed8d0154_bracel.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\16f0bc6f-01aa-4ee0-9a71-f5f6ed8d0154_bracel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\1788137e-0597-4492-91d0-c09f25dfa1ab_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\1788137e-0597-4492-91d0-c09f25dfa1ab_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\188edd68-dac0-41a3-bfc9-455eb89514c5_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\188edd68-dac0-41a3-bfc9-455eb89514c5_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\1fef68fb-5749-4252-b1ca-bf22969ae515_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\1fef68fb-5749-4252-b1ca-bf22969ae515_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\22314c8c-a62d-471f-ba82-70dc9c28d955_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\22314c8c-a62d-471f-ba82-70dc9c28d955_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\262a8a78-ce9c-48f3-b3b4-c075966983db_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\262a8a78-ce9c-48f3-b3b4-c075966983db_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\30704caf-1d0f-4638-bfd3-6140def228ee_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\30704caf-1d0f-4638-bfd3-6140def228ee_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\320ce5fc-4e36-4bfc-8e87-944da8374c8e_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\320ce5fc-4e36-4bfc-8e87-944da8374c8e_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\35fed56d-30ca-480f-9e5a-902c4ea0c6ab_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\35fed56d-30ca-480f-9e5a-902c4ea0c6ab_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\361e8292-9430-4b7a-90c3-2993621b884a_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\361e8292-9430-4b7a-90c3-2993621b884a_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\3bbe2e50-97bb-47f9-bf4d-11a90c972e79_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\3bbe2e50-97bb-47f9-bf4d-11a90c972e79_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\40a2d931-c043-4a6a-945f-a4db815c8a1d_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\40a2d931-c043-4a6a-945f-a4db815c8a1d_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\40fab3fa-51b0-4fc5-ab2f-0c21059e6686_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\40fab3fa-51b0-4fc5-ab2f-0c21059e6686_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\4236638a-9a2b-4e0b-960d-887cceb35a63_NIKE+COURT+VISION+LO+NN.png",
+      "PackagePath": "staticwebassets\\images\\productImages\\4236638a-9a2b-4e0b-960d-887cceb35a63_NIKE+COURT+VISION+LO+NN.png"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\4241b81a-c996-4490-8739-130db8cbf40e_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\4241b81a-c996-4490-8739-130db8cbf40e_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\468d10f2-3458-4042-9c9e-72b3c0d6cf3c_6-r-a-i-n-b-o-w-4-ezdezario-original-imagg4f3rg5jf99m.webp",
+      "PackagePath": "staticwebassets\\images\\productImages\\468d10f2-3458-4042-9c9e-72b3c0d6cf3c_6-r-a-i-n-b-o-w-4-ezdezario-original-imagg4f3rg5jf99m.webp"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\4764394c-b980-49ad-bce4-18a45d00b9ec_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\4764394c-b980-49ad-bce4-18a45d00b9ec_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\5080a25f-00d8-49a4-9e83-165fb91c04ab_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\5080a25f-00d8-49a4-9e83-165fb91c04ab_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\508981c5-2aba-4c06-a828-6caaa5b5a439_pexels-melvin-buezo-1253763-2529148.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\508981c5-2aba-4c06-a828-6caaa5b5a439_pexels-melvin-buezo-1253763-2529148.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\52be9a8b-f5b3-4f55-9a36-7da3384cf50b_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\52be9a8b-f5b3-4f55-9a36-7da3384cf50b_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\531fe11e-f21f-44ac-9554-978448afd799_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\531fe11e-f21f-44ac-9554-978448afd799_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\5a909237-41ce-4173-8635-91755da0bcd1_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\5a909237-41ce-4173-8635-91755da0bcd1_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\5d998145-8116-4c5d-9af5-0a96fd589502_NIKE+COURT+VISION+LO+NN.png",
+      "PackagePath": "staticwebassets\\images\\productImages\\5d998145-8116-4c5d-9af5-0a96fd589502_NIKE+COURT+VISION+LO+NN.png"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\5fd1ec06-43fa-41a6-93a1-62254954e89e_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\5fd1ec06-43fa-41a6-93a1-62254954e89e_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\5fd761a6-7c0a-41d2-859f-58008186a9a7_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\5fd761a6-7c0a-41d2-859f-58008186a9a7_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\665458b8-1ab4-4dd7-86b2-bef6b6b70d6e_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\665458b8-1ab4-4dd7-86b2-bef6b6b70d6e_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\682429b2-ccfc-4a11-80e2-3db97a5219b2_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\682429b2-ccfc-4a11-80e2-3db97a5219b2_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\6ed2f207-549b-418d-958f-7054c214b598_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\6ed2f207-549b-418d-958f-7054c214b598_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\732c02a8-a944-4bad-a621-9cc7528f99f7_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\732c02a8-a944-4bad-a621-9cc7528f99f7_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\84892edc-1ac9-4839-ba85-f9ad49290077_Amiri.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\84892edc-1ac9-4839-ba85-f9ad49290077_Amiri.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\855ac468-d719-4449-a4c5-cd43026e54cf_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\855ac468-d719-4449-a4c5-cd43026e54cf_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\85adb555-ff79-4b92-b450-d0f7d5975934_NIKE+COURT+VISION+LO+NN.png",
+      "PackagePath": "staticwebassets\\images\\productImages\\85adb555-ff79-4b92-b450-d0f7d5975934_NIKE+COURT+VISION+LO+NN.png"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\8e8543e0-70f1-4695-9ba7-63fd16a7c3a5_4-5-years-kuctshrt104-kuchipoo-original-imah47szhzahcuy2.webp",
+      "PackagePath": "staticwebassets\\images\\productImages\\8e8543e0-70f1-4695-9ba7-63fd16a7c3a5_4-5-years-kuctshrt104-kuchipoo-original-imah47szhzahcuy2.webp"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\9041556c-01f1-4499-8cfe-0265c933ef4d_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\9041556c-01f1-4499-8cfe-0265c933ef4d_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\94f07541-7d33-4020-a8a2-ae006db3ec93_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\94f07541-7d33-4020-a8a2-ae006db3ec93_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\994499e9-a1a5-4597-9bf8-894dcd1d7629_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\994499e9-a1a5-4597-9bf8-894dcd1d7629_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\a535cd86-3148-48ef-a240-3555d5339bfe_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\a535cd86-3148-48ef-a240-3555d5339bfe_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\a8cab092-56e9-4e43-b870-94aa31c7c17e_6-7-years-kuctshrt232-kuchipoo-original-imagrryhrcvvnrbq.webp",
+      "PackagePath": "staticwebassets\\images\\productImages\\a8cab092-56e9-4e43-b870-94aa31c7c17e_6-7-years-kuctshrt232-kuchipoo-original-imagrryhrcvvnrbq.webp"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\a9f4fe80-0454-4aeb-856b-d0672c0242fd_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\a9f4fe80-0454-4aeb-856b-d0672c0242fd_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\b30561d7-afb4-423d-98a2-d82f89ecad4d_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\b30561d7-afb4-423d-98a2-d82f89ecad4d_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\b4367712-f3cc-4d44-af17-a3b9755b9c4f_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\b4367712-f3cc-4d44-af17-a3b9755b9c4f_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\b69c29af-6280-40f2-9c36-a2e7cb8b92bb_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\b69c29af-6280-40f2-9c36-a2e7cb8b92bb_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\bd3399f7-fb39-47dd-acfd-43b5b3c3f8bf_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\bd3399f7-fb39-47dd-acfd-43b5b3c3f8bf_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\c0a3d250-56cb-4799-87fc-7d5c46be3644_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\c0a3d250-56cb-4799-87fc-7d5c46be3644_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\c396e780-b642-4a64-874e-4eb18b0640a9_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\c396e780-b642-4a64-874e-4eb18b0640a9_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\c3b0c2e1-aeb3-46c2-a1f3-5bf046909a38_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\c3b0c2e1-aeb3-46c2-a1f3-5bf046909a38_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\c3ea8348-ab1a-438c-9656-c25e06c94e2e_pexels-hanna-alves-1907982668-28966554.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\c3ea8348-ab1a-438c-9656-c25e06c94e2e_pexels-hanna-alves-1907982668-28966554.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\ca58139d-e7dd-4c9e-9ef2-f3c29038d13a_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\ca58139d-e7dd-4c9e-9ef2-f3c29038d13a_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d0452e57-f1a4-47b2-a24e-00d884cc4544_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\d0452e57-f1a4-47b2-a24e-00d884cc4544_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d1921fc4-f256-482f-9dfd-df11b5f5e2b2_10-11-years-4btnew-ftc-fashions-original-imah3hh3dddj82fd.webp",
+      "PackagePath": "staticwebassets\\images\\productImages\\d1921fc4-f256-482f-9dfd-df11b5f5e2b2_10-11-years-4btnew-ftc-fashions-original-imah3hh3dddj82fd.webp"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d1b5530b-64cd-4357-8f0d-2a160fa12a20_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\d1b5530b-64cd-4357-8f0d-2a160fa12a20_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d291a0c6-1faa-49bb-a0e8-021e7ee9f51f_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\d291a0c6-1faa-49bb-a0e8-021e7ee9f51f_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d47d0bfa-444d-4eb9-9540-527a1facbda1_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\d47d0bfa-444d-4eb9-9540-527a1facbda1_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d63cca08-0467-4a1e-8a33-94def58175de_pexels-flat-hito-294826-904350.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\d63cca08-0467-4a1e-8a33-94def58175de_pexels-flat-hito-294826-904350.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d82d4d27-b73e-4c63-8db0-8901124ccb80_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\d82d4d27-b73e-4c63-8db0-8901124ccb80_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\d91a1cd7-9384-4b0c-b932-7d5fb33f6e48_5-sh-tarzan-04-kids-asian-original-imahfzr78vecbehd.webp",
+      "PackagePath": "staticwebassets\\images\\productImages\\d91a1cd7-9384-4b0c-b932-7d5fb33f6e48_5-sh-tarzan-04-kids-asian-original-imahfzr78vecbehd.webp"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\dd173674-b72b-4602-ab11-0cc8b038be95_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\dd173674-b72b-4602-ab11-0cc8b038be95_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\dd8182cf-73bc-4b05-b0eb-6a87b761f646_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\dd8182cf-73bc-4b05-b0eb-6a87b761f646_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\ddb9f179-359e-48cc-ae89-be20faee3e1e_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\ddb9f179-359e-48cc-ae89-be20faee3e1e_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\e184bbeb-29aa-4b84-a773-71fa78de0b6d_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\e184bbeb-29aa-4b84-a773-71fa78de0b6d_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\e2d8e001-1ce0-4ab5-9087-951c986f7cdf_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\e2d8e001-1ce0-4ab5-9087-951c986f7cdf_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\f880bfb8-72bf-45fb-a96f-9adb3243e514_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\f880bfb8-72bf-45fb-a96f-9adb3243e514_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\f9fc7ad9-a6fb-417d-be07-a41c3eb38ff2_Shirt for men.jpg",
+      "PackagePath": "staticwebassets\\images\\productImages\\f9fc7ad9-a6fb-417d-be07-a41c3eb38ff2_Shirt for men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\productImages\\fe88655e-e7ac-40c8-898a-295089ce7963_10c-ayk-102-aerokick-original-imah3zxkhqfqhqh7.webp",
+      "PackagePath": "staticwebassets\\images\\productImages\\fe88655e-e7ac-40c8-898a-295089ce7963_10c-ayk-102-aerokick-original-imah3zxkhqfqhqh7.webp"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\images\\satish.jpg",
+      "PackagePath": "staticwebassets\\images\\satish.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mishr\\OneDrive\\Desktop\\6th sem project\\dailydelights\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DailyDelights.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DailyDelights.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DailyDelights.props",
+      "PackagePath": "build\\DailyDelights.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DailyDelights.props",
+      "PackagePath": "buildMultiTargeting\\DailyDelights.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DailyDelights.props",
+      "PackagePath": "buildTransitive\\DailyDelights.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

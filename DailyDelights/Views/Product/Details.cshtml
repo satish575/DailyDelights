@@ -1,0 +1,98 @@
+﻿@model DailyDelights.Models.Product
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-6">
+            <img src="~/images/productImages/@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Title">
+        </div>
+        <!-- Product Details -->
+        <div class="col-md-6">
+            <h2 class="text-primary">@Model.Title</h2>
+            <p class="text-muted">Added on: @Model.CreatedAt.ToString("MMMM dd, yyyy")</p>
+            <p><strong>Price:</strong> $@Model.Price</p>
+            <p><strong>Stock:</strong> @Model.Stock</p>
+            <p>
+                <strong>Category:</strong> 
+                @if (Model.Category != null)
+                {
+                    <span class="badge bg-info text-dark">@Model.Category.CategoryName</span>
+                }
+                else
+                {
+                    <span class="text-danger">No category assigned</span>
+                }
+            </p>
+            <p><strong>Description:</strong></p>
+            <p>@Model.Description</p>
+            <p>
+                <strong>Rating:</strong> 
+                @if (Model.Ratting > 0)
+                {
+                    <span class="text-warning">
+                        <i class="bi bi-star-fill"></i> @Model.Ratting.ToString("0.0")
+                    </span>
+                }
+                else
+                {
+                    <span class="text-muted">No ratings yet</span>
+                }
+            </p>
+            <!-- Action Buttons -->
+            <div class="d-flex gap-3">
+                <a href="@Url.Action("GetProducts", "Product")" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to Products
+                </a>
+               
+                <a class="btn btn-success" onclick="addToCart('@Model.Id', '@Model.Title', '@Model.ImageUrl', '@Model.Price', '@Model.Stock', '@User.Identity.IsAuthenticated')">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToCart(productId, productTitle, productImage, productPrice, productStock, isAuthenticated) {
+        if (isAuthenticated !== 'True') {
+            window.location.href = "/Account/Login";
+            return;
+        }
+
+        let cart = localStorage.getItem("cart");
+        if (!cart) {
+            cart = JSON.stringify([]);
+            localStorage.setItem("cart", cart);
+        }
+
+        let cartData = JSON.parse(cart);
+        let ifExist = false;
+
+        for (let i = 0; i < cartData.length; i++) {
+            if (cartData[i].productId == productId) {
+                ifExist = true;
+                break;
+            }
+        }
+
+        if (ifExist) {
+            return alert("Item already exists in the cart.");
+        }
+
+        const product = {
+            productId,
+            productTitle,
+            productImage,
+            productPrice,
+            productStock,
+            noOfItem: 1,
+            total: productPrice // Calculate total here
+        };
+
+        product.total = product.productPrice * product.noOfItem;
+        cartData.push(product);
+        localStorage.setItem("cart", JSON.stringify(cartData));
+        alert("Product added to cart!");
+    }
+</script>

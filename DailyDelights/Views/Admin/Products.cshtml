@@ -1,0 +1,117 @@
+﻿
+@{
+    Layout="~/Views/Admin/_AdminLayout.cshtml";
+}
+@model IEnumerable<DailyDelights.Models.Product>;
+
+
+
+
+<div class="container">
+
+
+
+
+    
+
+
+
+    <div class="row">
+        <div class="col-14">
+            <h1 class="text-center">Products</h1>
+            
+        </div>
+        <div class="col-10">
+            <a class="btn btn-success my-2" asp-controller="Admin" asp-action="AddProduct">Add new product</a>
+        </div>
+
+    </div>
+
+<div class="row mb-4">
+        <div class="col-12">
+            <form method="get" asp-controller="Admin" asp-action="Products">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="searchQuery" placeholder="Search for products..." />
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-14">
+
+            @if(Model.Count()==0){
+    <h1>No Products avaliable</h1>
+}else{
+    <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <td>S.N</td>
+                        <td>Title</td>
+                        <td>Description</td>
+                        <td>Category</td>
+                        <td>Price</td>
+                        <td>Stock</td>
+                        <td>Created at</td>
+                        <td colspan="2">Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+    @foreach(var product in Model){
+                <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Title</td>
+                        <td>@product.Description</td>
+                        
+                            @if(product.CategoryId is null){
+                                <td>Uncategories</td>
+                            }else{
+                                <td>@product.Category.CategoryName</td>
+                            }
+
+                        
+                        <td>@product.Price</td>
+                        <td>@product.Stock</td>
+                        <td>@product.CreatedAt</td>
+                       
+                        <td><a class="btn btn-primary" asp-controller="Admin" asp-action="EditProduct" asp-route-id="@product.Id">Edit</a></td>
+                        <td>
+     <a class="btn btn-danger" href="@Url.Action("DeleteProduct", "Admin", new { id = product.Id })" onclick="return handleDelete(event)">
+        Delete
+    </a>
+</td>
+
+                    </tr>
+       
+    }
+     </tbody>
+            </table>
+}
+
+            
+                    
+               
+        </div>
+    </div>
+</div>
+
+<script>
+    function handleDelete(e) {
+        // Show confirmation dialog
+        if (!confirm("Are you sure you want to delete this product?")) {
+            // Prevent default link behavior (navigation) if user cancels
+            e.preventDefault();
+        }
+        // If the user clicks "OK", the default behavior (navigation) will happen, and the product will be deleted
+    }
+</script>
+
+
+
+
+
+
+
+   
+

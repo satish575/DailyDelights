@@ -1,0 +1,26 @@
+﻿@model IEnumerable<DailyDelights.ViewModels.ProductReviewViewModel>
+
+<h1>Rate Your Products</h1>
+<form asp-controller="Review" asp-action="SubmitRatings" method="POST">
+    <div id="products">
+        @foreach (var product in Model)
+        {
+            <div class="product">
+                <h3>@product.product.Title</h3>
+                <p>@product.product.Description</p>
+                <img src="~/images/productImages/@product.product.ImageUrl" alt="Product Image" style="width:150px;height:auto;" />
+                <label for="rating-@product.product.Id">Rating:</label>
+                <select name="Ratings[]" id="rating-@product.product.Id" required>
+                    <option value="">Select Rating</option>
+                    <option value="1">1 - Very Poor</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <input type="hidden" name="ProductIds[]" value="@product.product.Id" />
+            </div>
+        }
+    </div>
+    <button class="btn btn-success" type="submit">Submit Ratings</button>
+</form>

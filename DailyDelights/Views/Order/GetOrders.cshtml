@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Order>
+
+<h1>Orders page</h1>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <td>Order Id</td>
+            <td>Order date</td>
+            <td>Total amount</td>
+            <td>Payment</td>
+            <td>Is delivered</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.OrderDate</td>
+                <td>@item.TotalAmount</td>
+                @if(item.IsPain){
+                    <td><i class="bi bi-check text-success"></i></td>
+                }else{
+                    <td><i class="bi bi-x text-danger fw-bold"></i></td>
+                }
+                @if(item.IsDelivered){
+                     <td><i class="bi bi-check text-success"></i></td>
+                }else{
+                     <td><i class="bi bi-x text-danger fw-bold"></i></td>
+                }
+               
+               
+                
+                @if(item.IsDelivered){
+                     <td><a class="btn btn-warning" asp-controller="Review" asp-action="ReviewOrder" asp-route-orderid="@item.Id">Rate Products</a></td>
+                }else{
+ <td><a class="btn btn-success" asp-controller="Order" asp-action="OrderDetail" asp-route-orderid="@item.Id">Details</a></td>
+                }
+            </tr>
+        }
+    </tbody>
+
+</table>

@@ -1,0 +1,95 @@
+﻿@model Order
+
+@section Scripts {
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        var stripe = Stripe('@ViewData["PublishableKey"]');
+        var elements = stripe.elements();
+        var card = elements.create("card");
+        card.mount("#card-element");
+
+        document.getElementById("payment-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Disable the button to prevent multiple submissions
+            const submitButton = document.querySelector("button[type='submit']");
+            submitButton.disabled = true;
+            submitButton.textContent = "Processing...";
+
+            stripe.createPaymentMethod({
+                type: 'card',
+                card: card, // Corrected the variable name
+                billing_details: {
+                    name: document.getElementById('card-holder-name')?.value || "Anonymous", // Optional name
+                },
+            }).then(function (result) {
+                if (result.error) {
+                    // Show error to the customer
+                    document.getElementById("card-errors").textContent = result.error.message;
+                    submitButton.disabled = false;
+                    submitButton.textContent = "Submit Payment";
+                } else {
+                    // Send PaymentMethod ID to the backend
+                    fetch('/Order/ProcessPayment', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            paymentMethodId: result.paymentMethod.id,
+                            amount: document.getElementById('amount').value,
+                            orderId: document.getElementById('order-id').value,
+                        }),
+                    })
+                        .then((response) => response.json())
+                        .then((data) => {
+                            if (data.success) {
+                                window.location.href = '/Payment/Success?orderId=' + data.orderId;
+                            } else {
+                                document.getElementById("card-errors").textContent = data.message || "Payment failed!";
+                                submitButton.disabled = false;
+                                submitButton.textContent = "Submit Payment";
+                            }
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                            document.getElementById("card-errors").textContent = "An error occurred. Please try again.";
+                            submitButton.disabled = false;
+                            submitButton.textContent = "Submit Payment";
+                        });
+                }
+            });
+        });
+    </script>
+}
+
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow p-4" style="width: 28rem;">
+        <h3>Your order has submitted successfully</h3>
+        <h3>Proceed to payment</h3>
+        <h4 class="card-title text-center mb-4">Payment Details</h4>
+        <form id="payment-form">
+            <input type="hidden" id="order-id" value="@Model.Id" />
+
+            <div class="mb-3">
+                <label for="amount" class="form-label">Amount:</label>
+                <p class="form-control-plaintext">$@Model.TotalAmount</p>
+                <input type="hidden" id="amount" value="@Model.TotalAmount" />
+            </div>
+
+            <div class="mb-3">
+                <label for="card-holder-name" class="form-label">Cardholder's Name</label>
+                <input type="text" id="card-holder-name" class="form-control" placeholder="Enter your name" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="card-element" class="form-label">Credit or Debit Card</label>
+                <div id="card-element" class="form-control"></div>
+                <div id="card-errors" role="alert" class="text-danger mt-2"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit Payment</button>
+        </form>
+    </div>
+</div>

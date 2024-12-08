@@ -1,0 +1,51 @@
+﻿@model DailyDelights.ViewModels.RegisterViewModel
+
+<div class="container mt-5">
+
+    @{
+       string message= ViewBag.Message;
+    }
+
+  @if(!String.IsNullOrEmpty(message)){
+    <h1>@message</h1>
+  }
+    <div class="row justify-content-center">
+        <div class="row justify-context-between g-0" style="height: 75vh; width: 50vw;">
+            <div class="col-6" style="height: 100%;width: 50%;">
+                <img style="width: 100%; height: 100%; object-fit: cover;"
+                    src="https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
+            <div class="col-6 p-3" style="height:100%; width: 50%;background-color: whitesmoke;">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <h1 style="color: #FFC32C;">Register</h1><br>
+                <form action="" method="post">
+                    <input type="text" asp-for="Username" id="" class="form-control mb-2" placeholder="Enter username">
+                    <span class="text-danger" asp-validation-for="Username"> </span>
+                    <input type="email" asp-for="Email" id="" class="form-control mb-2" placeholder="Enter email">
+                     <span class="text-danger" asp-validation-for="Email"></span>
+                    <input type="password" asp-for="Password" id="" class="form-control mb-2" placeholder="Enter password">
+                     <span class="text-danger" asp-validation-for="Password"></span>
+                    <input type="password" asp-for="ConfirmPassword" id="" class="form-control mb-2" placeholder="Confirm password">
+                     <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                     <label asp-for="Gender">Select Gender</label><br>
+                     <input type="radio"  asp-for="Gender" id="" value="Male"> Male 
+                     <input type="radio"  asp-for="Gender" id="" value="Female"> Female
+                     <input type="radio"  asp-for="Gender" id="" value="Others"> Male 
+                    <br>
+                    <span asp-validation-for="Gender"></span>
+                     <label asp-for="DOB">Select Date of birth</label><br>
+                     <input type="date" class="form-control mb-2" asp-for="DOB" id="">
+                     <span asp-validation-for="DOB"></span>
+                     
+                    <input class="btn mb-2" style="background-color: #FFC32C; color: white;" type="submit" value="Register">
+                </form>
+                 <span>Already have an account ?<a asp-controller="Account" asp-action="Login" class="text-decoration-none" style="color: red; margin-left: 3px;">Login</a></span>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+</div>

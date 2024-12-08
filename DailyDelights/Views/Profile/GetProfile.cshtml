@@ -1,0 +1,48 @@
+﻿@model DailyDelights.ViewModels.UserProfile
+
+@{
+    Layout = "_Layout";  // Use your layout file or remove this line if you want to use a default layout
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title">User Profile</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- User Image (Placeholder until you upload) -->
+                            <img src="~/images/@Model.ImagePath" alt="User Image" class="img-fluid rounded-circle" />
+                        </div>
+                        <div class="col-md-8">
+                            <h4>@Model.UserName (@Model.Gender)</h4>
+                            <p>Email: @Model.Email</p>
+                            <p>Date of Birth: @Model.DOB.ToString("MMMM dd, yyyy")</p>
+                            @if (@Model.EmailConfirmed)
+                            {
+                                <p>Email Verified: Yes</p>
+                            }
+                            else
+                            {
+                                <p>Email Verified: No</p>
+                            }
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="text-center">
+                        <a asp-controller="Profile" asp-action="EditProfile" class="btn btn-warning">Edit Profile</a>
+                        <a asp-controller="Profile" asp-action="ChangePassword" class="btn btn-danger">Change Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Optional: Custom JS for profile functionality
+    </script>
+}

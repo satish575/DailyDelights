@@ -1,0 +1,122 @@
+﻿<div class="container mt-5">
+    <div class="row">
+        <div class="col-7">
+            <div class="container">
+                <div class="row g-2 cartdata">
+                    <!-- Cart product rendering will be dynamically handled -->
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h3>Total Amount</h3>
+            <h3 id="total">$0</h3>
+            <button class="btn btn-success" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener("DOMContentLoaded", showCart);
+
+    function showCart() {
+        let cartData = document.getElementsByClassName("cartdata")[0];
+        let totalAmountElement = document.getElementById("total");
+        let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
+        let totalAmount = 0;
+
+        cartData.innerHTML = "";
+
+        if (cartArray.length === 0) {
+            cartData.innerHTML = `<p>Your cart is empty.</p>`;
+            totalAmountElement.innerHTML = "$0";
+            return;
+        }
+
+        for (let i = 0; i < cartArray.length; i++) {
+            totalAmount += cartArray[i].total;
+
+            cartData.innerHTML += `
+                <div class="col-12" style="height: 200px; margin: 0; padding: 0; margin-top: 2px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3" style="margin: 0; padding: 0;">
+                                <img style="width: 100%; height: 200px; object-fit: cover;"
+                                    src="/images/productImages/${cartArray[i].productImage}" alt="">
+                            </div>
+                            <div class="col-4">
+                                <h2>${cartArray[i].productTitle}</h2>
+                                <p>Price: ${cartArray[i].productPrice}</p>
+                            </div>
+                            <div class="col-4">
+                                <h2>Quantity</h2>
+                                <h3>${cartArray[i].noOfItem}</h3>
+                                <input type="range" class="form-range" min="1" max="${cartArray[i].productStock}"
+                                    value="${cartArray[i].noOfItem}" step="1"
+                                    onchange="updateProduct('${cartArray[i].productTitle}', this.value)" />
+                                <i class="bi bi-trash-fill btn btn-danger" onclick="DeleteFromCart('${cartArray[i].productTitle}')"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        totalAmountElement.innerHTML = `$${totalAmount.toFixed(2)}`;
+    }
+   function DeleteFromCart(productTitle){
+    let cartArray = JSON.parse(localStorage.getItem("cart"));
+    let newCartArray=cartArray.filter(products=> products.productTitle != productTitle);
+    localStorage.setItem("cart", JSON.stringify(newCartArray));
+        showCart();
+   }
+    function updateProduct(productTitle, newItemValue) {
+        let cartArray = JSON.parse(localStorage.getItem("cart"));
+
+        for (let i = 0; i < cartArray.length; i++) {
+            if (cartArray[i].productTitle === productTitle) {
+                cartArray[i].noOfItem = newItemValue;
+                cartArray[i].total = cartArray[i].productPrice * cartArray[i].noOfItem;
+            }
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cartArray));
+        showCart();
+    }
+
+    function placeOrder() {
+        let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
+
+        if (cartArray.length === 0) {
+            alert("Your cart is empty.");
+            return;
+        }
+
+        let orderDetails = {
+            products: cartArray,
+            totalAmount: cartArray.reduce((sum, item) => sum + item.total, 0),
+            orderDate: new Date().toISOString()
+        };
+
+        // Send order details to the backend using fetch
+        fetch('/Order/PlaceOrder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+               
+            },
+            body: JSON.stringify(orderDetails),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Redirect to payment page or order confirmation
+                 localStorage.setItem("cart", JSON.stringify([]));
+                window.location.href = `/Order/PaymentPage?orderId=${data.orderId}`;
+            } else {
+                alert("Error placing order. Please try again.");
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>

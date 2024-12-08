@@ -1,0 +1,29 @@
+﻿@{
+    Layout="~/Views/Admin/_AdminLayout.cshtml";
+}
+@model Category
+@{
+    string success=ViewBag.Success;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-14">
+            <h1 class="text-center">Add new category</h1>
+            @if(!string.IsNullOrEmpty(success)){
+                <h1>@success</h1>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+            <div class="" asp-validation-summary="All"></div>
+            <form asp-controller="Admin" asp-method="AddCategory" method="post">
+                <input type="text" class="form-control" asp-for="CategoryName" id="" placeholder="Enter category name">
+                <span asp-validation-for="CategoryName"></span>
+                <input type="submit" class="btn btn-primary mt-2" value="Add">
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

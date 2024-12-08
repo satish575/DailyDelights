@@ -1,0 +1,58 @@
+﻿@model DailyDelights.ViewModels.UserProfileEdit
+
+@{
+    Layout = "_Layout"; // Use your layout file
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-warning text-white">
+                    <h3 class="card-title">Edit Profile</h3>
+                </div>
+                <div class="card-body">
+                    <div asp-validation-summary="All"></div>
+                    <form asp-action="EditProfile" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="UserName" class="form-control" value="@Model.UserName" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" class="form-control" value="@Model.Email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="Gender" class="form-control">
+                                 <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option> 
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="DOB" class="form-control" value="@Model.DOB.ToString("yyyy-MM-dd")" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="image">Profile Image</label>
+                            <input type="file" id="image" name="image" class="form-control" />
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <div class="mt-2">
+                                    <img src="~/images/@Model.ImagePath" alt="Profile Image" class="img-thumbnail" style="max-width: 150px;" />
+                                </div>
+                            }
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

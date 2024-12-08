@@ -1,0 +1,50 @@
+﻿@{
+    Layout="~/Views/Admin/_AdminLayout.cshtml";
+}
+@model IEnumerable<Order>
+
+<h1>Orders page</h1>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <td>Order Id</td>
+            <td>Order date</td>
+            <td>Total amount</td>
+            <td>Payment</td>
+            <td>Is delivered</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.OrderDate</td>
+                <td>@item.TotalAmount</td>
+                @if(item.IsPain){
+                    <td><i class="bi bi-check text-success fw-bold"></i></td>
+                }else{
+                    <td><i class="bi bi-x text-danger fw-bold"></i></td>
+                }
+                @if(item.IsDelivered){
+                    <td><i class="bi bi-check text-success fw-bold"></i></td>
+                }else{
+                    <td><i class="bi bi-x text-danger fw-bold"></i></td>
+                }
+
+                
+                <td><a class="btn btn-success" asp-controller="Admin" asp-action="OrderDetail" asp-route-orderid="@item.Id">Details</a></td>
+                @if(!item.IsDelivered){
+                <td><a class="btn btn-success" asp-controller="Admin" asp-action="OrderMarkDeliver" asp-route-orderid="@item.Id">Mark as delivered</a></td>
+                }else{
+                <td><a class="btn btn-secondary">Mark as delivered</a></td>
+                }
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+
